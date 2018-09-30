@@ -1,0 +1,80 @@
+//This is my project
++include st io.h bt
+
+v_void vv_fun : lfb v_int vv_param rfb
+lsb
+    @if lfb vv_param eq 0 rfb
+    lsb
+    return;
+    rsb
+
+    @else
+    lsb
+        param pp;
+        put lsb param rsb;
+    rsb
+rsb
+
+v_int main : lfb rfb
+lcb
+
+    v_int vv_i as 6;
+    v_int vv_cnt;
+    v_sting vv_str;
+    v_double vv_dbl;
+    v_int vv_arr[10];
+
+    take lfb vv_cnt rfb;
+
+    @if lfb vv_i bt 4 and vv_i st 10 rfb
+    lsb
+        put lfb "Neutral" rfb;
+    rsb
+
+    @elif lfb vv_i neq 5 or vv_i neq 6
+    lsb
+        put lfb " example of not " rfb;
+    rsb
+
+    @else
+    lsb
+        put lfb "example of else" rfb;
+    rsb
+
+    vv_i as 0;
+    @for lfb vv_i:vv_i+10:+ rfb
+    lsb
+
+    put lfb "vv_i" rfb;
+
+    rsb
+
+    vv_i eq vv_i add 4;
+    vv_i eq vv_i sub 3;
+    vv_i eq vv_i mul 2;
+    vv_i eq vv_i div 6;
+
+    vv_i adde 4;
+    vv_i sube 2;
+    vv_i mule 3;
+    vv_i dive 7;
+
+    vv_i pp;
+    vv_i mm;
+
+    @if lfb vv_i eq cnt rfb
+    lsb
+        put lfb "equal" rfb;
+    rsb
+
+    @elif lfb vv_i bt cnt rfb
+    lsb
+        put lfb "greater" rfb;
+    rsb
+
+    @else
+    lsb
+        put lfb "smaller" rfb;
+    rsb
+
+rcb
